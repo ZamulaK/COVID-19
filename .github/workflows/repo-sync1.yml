@@ -1,6 +1,6 @@
 # File: .github/workflows/repo-sync1.yml
 
-name: Repo Sync
+name: RepoSync master
 on:
   schedule:
   - cron:  "*/60 * * * *"
