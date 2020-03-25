@@ -1,7 +1,7 @@
 name: RepoSync web-data
 on:
   schedule:
-  - cron:  "*/30 * * * *"
+  - cron:  "*/15 * * * *"
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
