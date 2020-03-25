@@ -1,4 +1,4 @@
-name: RepoSync master
+name: RepoSync master-dan
 on:
   schedule:
   - cron:  "*/60 * * * *"
@@ -12,5 +12,5 @@ jobs:
       with:
         source_repo: "CSSEGISandData/COVID-19"
         source_branch: "master"
-        destination_branch: "dan"
+        destination_branch: "master-dan"
         github_token: ${{ secrets.GITHUB_TOKEN }}
