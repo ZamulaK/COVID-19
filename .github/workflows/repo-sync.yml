@@ -1,16 +1,18 @@
+# File: .github/workflows/repo-sync.yml
+
 name: Repo Sync
 on:
-  schedule:
-  - cron:  "*/15 * * * *"
+  schedule:
+  - cron:  "*/15 * * * *"
 jobs:
-  repo-sync:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: repo-sync
-      uses: repo-sync/github-sync@v2
-      with:
-        source_repo: "CSSEGISandData/COVID-19"
-        source_branch: "master"
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: repo-sync
+      uses: repo-sync/github-sync@v2
+      with:
+        source_repo: "CSSEGISandData/COVID-19/"
+        source_branch: "master"
         destination_branch: "dan"
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
