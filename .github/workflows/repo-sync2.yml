@@ -1,9 +1,9 @@
 # File: .github/workflows/repo-sync2.yml
 
-name: RepoSync-2
+name: RepoSync web-data
 on:
   schedule:
-  - cron:  "*/30 * * * *"
+  - cron:  "*/15 * * * *"
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
