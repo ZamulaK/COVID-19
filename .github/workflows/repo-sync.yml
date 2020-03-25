@@ -3,7 +3,7 @@
 name: Repo Sync
 on:
   schedule:
-  - cron:  "*/15 * * * *"
+  - cron:  "*/60 * * * *"
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
