@@ -30,12 +30,10 @@ GOTO EOF
 :ProcessFiles
 ECHO.
 ECHO New files: %NewFile%
+ECHO %NewFile% > "daily_date.csv" 
 ECHO %NewFile% > "%NewFile%.txt"
 DEL "%LastFile%.txt"
-(
-ECHO DateMax 
-ECHO %NewFile%
-) > "daily_date.csv"
+
 
 
 ECHO. 
