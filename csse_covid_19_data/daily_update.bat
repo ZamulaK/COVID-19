@@ -20,6 +20,10 @@ FOR /F "eol=| delims=" %%I IN ('DIR "..\..\trunk\csse_covid_19_data\csse_covid_1
 )
 
 :CheckResult
+(
+ECHO DateMax 
+ECHO %NewFile%
+) > "daily_date.csv"
 IF NOT "%LastFile%" == "%NewFile%" (
   GOTO ProcessFiles
 )
