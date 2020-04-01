@@ -1,7 +1,9 @@
 @ECHO off
 
 :UpdateSVN
-call "..\..\trunk\csse_covid_19_data\update.bat"
+ECHO "Processing upstream changes..."
+svn cleanup
+svn update "..\..\trunk"
 
 :CheckLast
 FOR /F "eol=| delims=" %%I IN ('DIR ".\*.txt" /A-D /B /O-D /TW 2^>nul') DO (
@@ -19,6 +21,7 @@ FOR /F "eol=| delims=" %%I IN ('DIR "..\..\trunk\csse_covid_19_data\csse_covid_1
 IF NOT "%LastFile%" == "%NewFile%" (
   GOTO ProcessFiles
 )
+ECHO ""
 ECHO "No new files: %LastFile%"
 GOTO EOF
 
@@ -26,13 +29,14 @@ GOTO EOF
 ECHO %NewFile% > "%NewFile%.txt"
 DEL "%LastFile%.txt"
 
+ECHO ""
 ECHO "Merging files..."
 ".\util\mktoapi.exe" merge --folder "..\..\trunk\csse_covid_19_data\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname true
 
+ECHO ""
 ECHO "SVN commit..."
-rem svn commit -m "daily case update"
-rem svn cleanup
-rem svn update
-rem exit 0
+svn commit -m "daily case update"
+svn cleanup
+svn update
 
 :EOF
