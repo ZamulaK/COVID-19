@@ -20,10 +20,6 @@ FOR /F "eol=| delims=" %%I IN ('DIR "..\..\trunk\csse_covid_19_data\csse_covid_1
 )
 
 :CheckResult
-(
-ECHO DateMax 
-ECHO %NewFile%
-) > "daily_date.csv"
 IF NOT "%LastFile%" == "%NewFile%" (
   GOTO ProcessFiles
 )
@@ -36,6 +32,11 @@ ECHO.
 ECHO New files: %NewFile%
 ECHO %NewFile% > "%NewFile%.txt"
 DEL "%LastFile%.txt"
+(
+ECHO DateMax 
+ECHO %NewFile%
+) > "daily_date.csv"
+
 
 ECHO. 
 ECHO Merging files...
