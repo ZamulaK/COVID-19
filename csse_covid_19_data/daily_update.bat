@@ -1,4 +1,5 @@
 @ECHO off
+CLS
 
 :UpdateSVN
 ECHO Processing upstream changes...
@@ -46,3 +47,5 @@ svn update
 :EOF
 ECHO.
 ECHO Daily case update check complete!
+TIMEOUT 3
+EXIT 0
