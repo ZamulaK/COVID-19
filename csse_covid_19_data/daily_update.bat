@@ -34,7 +34,6 @@ ECHO %NewFile% > "daily_date.csv"
 ECHO %NewFile% > "%NewFile%.txt"
 DEL "%LastFile%.txt"
 
-svn commit -m "daily case update"
 
 ECHO. 
 ECHO Merging files...
@@ -44,6 +43,8 @@ ECHO.
 ECHO SVN commit...
 ECHO.
 svn commit -m "daily case update"
+svn cleanup 
+svn update
 
 
 :EOF
