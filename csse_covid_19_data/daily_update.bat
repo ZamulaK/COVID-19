@@ -43,6 +43,8 @@ ECHO Merging files...
 ECHO. 
 ECHO SVN commit...
 ECHO.
+svn cleanup
+svn update "."
 svn commit -m "daily case update"
 svn cleanup
 svn update
@@ -50,5 +52,5 @@ svn update
 :EOF
 ECHO.
 ECHO Daily case update check complete!
-TIMEOUT 3
+TIMEOUT 30
 EXIT 0
