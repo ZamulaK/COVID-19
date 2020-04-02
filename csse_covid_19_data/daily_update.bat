@@ -43,9 +43,7 @@ ECHO Merging files...
 ECHO. 
 ECHO SVN commit...
 ECHO.
-svn cleanup
-svn update "."
-svn commit -m "daily case update"
+svn commit "." --depth infinity -m "daily case update"
 svn cleanup
 svn update
 
