@@ -50,5 +50,5 @@ svn update
 :EOF
 ECHO.
 ECHO Daily case update check complete!
-TIMEOUT 30
+TIMEOUT 5
 EXIT 0
