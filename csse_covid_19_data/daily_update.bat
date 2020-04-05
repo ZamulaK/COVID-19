@@ -24,7 +24,7 @@ IF NOT "%LastFile%" == "%NewFile%" (
   GOTO ProcessFiles
 )
 ECHO. 
-ECHO No new files: %LastFile%
+ECHO Last Date: %LastFile%  ***  Daily Date: %NewFile%
 GOTO SVN
 
 :ProcessFiles
