@@ -25,7 +25,7 @@ IF NOT "%LastFile%" == "%NewFile%" (
 )
 ECHO. 
 ECHO No new files: %LastFile%
-GOTO EOF
+GOTO SVN
 
 :ProcessFiles
 ECHO.
@@ -39,6 +39,9 @@ ECHO.
 ECHO Merging files...
 ".\util\FileUtil.exe" merge --folder "..\..\trunk\csse_covid_19_data\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname true
 
+TIMEOUT 30
+
+:SVN
 ECHO. 
 ECHO SVN commit...
 ECHO.
