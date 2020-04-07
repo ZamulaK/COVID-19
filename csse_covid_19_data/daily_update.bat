@@ -5,7 +5,7 @@ CLS
 ECHO Processing upstream changes...
 ECHO.
 svn cleanup
-svn update "..\..\master-dan"
+svn update "..\CSSEGISandData\csse_covid_19_daily_reports"
 
 :CheckLast
 FOR /F "eol=| delims=" %%I IN ('DIR ".\*.txt" /A-D /B /O-D /TW 2^>nul') DO (
@@ -14,7 +14,7 @@ FOR /F "eol=| delims=" %%I IN ('DIR ".\*.txt" /A-D /B /O-D /TW 2^>nul') DO (
 )
 
 :CheckNew
-FOR /F "eol=| delims=" %%I IN ('DIR "..\..\master-dan\csse_covid_19_data\csse_covid_19_daily_reports\*.csv" /A-D /B /O-D /TW 2^>nul') DO (
+FOR /F "eol=| delims=" %%I IN ('DIR "..\CSSEGISandData\csse_covid_19_daily_reports\*.csv" /A-D /B /O-D /TW 2^>nul') DO (
     SET NewFile=%%~nI
     GOTO CheckResult
 )
@@ -37,7 +37,7 @@ DEL "%LastFile%.txt"
 
 ECHO. 
 ECHO Merging files...
-".\util\FileUtil.exe" merge --folder "..\..\master-dan\csse_covid_19_data\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname true
+".\util\FileUtil.exe" merge --folder "...\CSSEGISandData\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname true
 
 PING -n 20 127.0.0.1>nul
 
