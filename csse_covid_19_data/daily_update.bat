@@ -37,7 +37,7 @@ DEL "%LastFile%.txt"
 
 ECHO. 
 ECHO Merging files...
-".\util\FileUtil.exe" merge --folder "...\CSSEGISandData\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname true
+".\util\FileUtil.exe" merge --folder "..\CSSEGISandData\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname true
 
 PING -n 20 127.0.0.1>nul
 
