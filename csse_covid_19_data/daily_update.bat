@@ -4,6 +4,7 @@ CLS
 :UpdateSVN
 ECHO Processing upstream changes...
 ECHO.
+%LOCALAPPDATA%\Microsoft\OneDrive\OneDrive.exe /shutdown
 svn cleanup
 svn update "..\CSSEGISandData\csse_covid_19_daily_reports"
 
@@ -39,8 +40,6 @@ ECHO.
 ECHO Merging files...
 ".\util\FileUtil.exe" merge --folder "..\CSSEGISandData\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname true
 
-PING -n 20 127.0.0.1>nul
-
 :SVN
 ECHO. 
 ECHO SVN commit...
@@ -51,7 +50,8 @@ svn update
 
 
 :EOF
+%LOCALAPPDATA%\Microsoft\OneDrive\OneDrive.exe /background
 ECHO.
 ECHO Daily case update check complete!
-PING -n 5 127.0.0.1>nul
+TIMEOUT 5
 EXIT 0
