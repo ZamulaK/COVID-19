@@ -1,7 +1,7 @@
 name: RepoSync master-dan
 on:
   schedule:
-  - cron:  "*/15 0,1,2,23 * * *"
+  - cron:  "45 */2 * *"
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
