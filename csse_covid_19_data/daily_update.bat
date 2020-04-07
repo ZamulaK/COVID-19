@@ -1,9 +1,9 @@
 @ECHO off
-REM CLS
+CLS
 
 :UpdateSVN
-REM ECHO Processing upstream changes...
-REM ECHO.
+ECHO Processing upstream changes...
+ECHO.
 svn cleanup
 svn update "..\CSSEGISandData\csse_covid_19_daily_reports"
 
@@ -23,35 +23,35 @@ FOR /F "eol=| delims=" %%I IN ('DIR "..\CSSEGISandData\csse_covid_19_daily_repor
 IF NOT "%LastFile%" == "%NewFile%" (
   GOTO ProcessFiles
 )
-REM ECHO. 
-REM ECHO Last Date: %LastFile%  ***  Daily Date: %NewFile%
+ECHO. 
+ECHO Last Date: %LastFile%  ***  Daily Date: %NewFile%
 GOTO SVN
 
 :ProcessFiles
-REM ECHO.
-REM ECHO New files: %NewFile%
+ECHO.
+ECHO New files: %NewFile%
 ECHO %NewFile% > "daily_date.csv" 
 ECHO %NewFile% > "%NewFile%.txt"
 DEL "%LastFile%.txt"
 
 
-REM ECHO. 
-REM ECHO Merging files...
+ECHO. 
+ECHO Merging files...
 ".\util\FileUtil.exe" merge --folder "..\CSSEGISandData\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname true
 
 PING -n 20 127.0.0.1>nul
 
 :SVN
-REM ECHO. 
-REM ECHO SVN commit...
-REM ECHO.
+ECHO. 
+ECHO SVN commit...
+ECHO.
 svn commit -m "daily case update"
 svn cleanup 
 svn update
 
 
 :EOF
-REM ECHO.
-REM ECHO Daily case update check complete!
+ECHO.
+ECHO Daily case update check complete!
 PING -n 5 127.0.0.1>nul
 EXIT 0
