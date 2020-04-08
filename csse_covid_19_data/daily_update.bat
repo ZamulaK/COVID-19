@@ -1,8 +1,6 @@
 @ECHO off
 CLS
 
-GOTO EOF
-
 :UpdateSVN
 ECHO Processing upstream changes...
 ECHO.
