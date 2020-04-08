@@ -1,10 +1,12 @@
 @ECHO off
 CLS
 
+GOTO EOF
+
 :UpdateSVN
 ECHO Processing upstream changes...
 ECHO.
-%LOCALAPPDATA%\Microsoft\OneDrive\OneDrive.exe /shutdown
+wscript.exe OneDriveLaunch.vbs /shutdown
 svn cleanup
 svn update "..\CSSEGISandData\csse_covid_19_daily_reports"
 
@@ -35,7 +37,6 @@ ECHO %NewFile% > "daily_date.csv"
 ECHO %NewFile% > "%NewFile%.txt"
 DEL "%LastFile%.txt"
 
-
 ECHO. 
 ECHO Merging files...
 ".\util\FileUtil.exe" merge --folder "..\CSSEGISandData\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname true
@@ -49,7 +50,6 @@ svn cleanup
 svn update
 
 :EOF
-wscript.exe OneDriveLaunch.vbs
 ECHO.
 ECHO Daily case update check complete!
 TIMEOUT 5
