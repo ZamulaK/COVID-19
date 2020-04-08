@@ -26,7 +26,7 @@ IF NOT "%LastFile%" == "%NewFile%" (
 )
 ECHO. 
 ECHO Last Date: %LastFile%  ***  Daily Date: %NewFile%
-GOTO SVN
+GOTO EOF
 
 :ProcessFiles
 ECHO.
@@ -48,9 +48,8 @@ svn commit -m "daily case update"
 svn cleanup 
 svn update
 
-
 :EOF
-%LOCALAPPDATA%\Microsoft\OneDrive\OneDrive.exe /background
+wscript.exe OneDriveLaunch.vbs
 ECHO.
 ECHO Daily case update check complete!
 TIMEOUT 5
