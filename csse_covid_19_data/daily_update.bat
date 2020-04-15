@@ -14,7 +14,7 @@ FOR /F "eol=| delims=" %%I IN ('DIR ".\*.txt" /A-D /B /O-D /TW 2^>nul') DO (
 )
 
 :CheckNew
-FOR /F "eol=| delims=" %%I IN ('DIR "..\CSSEGISandData\csse_covid_19_daily_reports\*.csv" /A-D /B /O-D /TW 2^>nul') DO (
+FOR /F "eol=| delims=" %%I IN ('DIR "..\CSSEGISandData\csse_covid_19_daily_reports\*.csv" /A-D /B /O-N /TW 2^>nul') DO (
     SET NewFile=%%~nI
     GOTO CheckResult
 )
