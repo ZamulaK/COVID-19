@@ -1,1 +1,1 @@
-# Fork => Consolidated from Johns Hopkins CSSE COVID-19 Data
+# COVID-19 Data - Consolidated from Johns Hopkins CSSE 
