@@ -15,5 +15,5 @@ jobs:
       with:
         source_repo: "CSSEGISandData/COVID-19"
         source_branch: "web-data"
-        destination_branch: "web-data"
+        destination_branch: "master-dan"
         github_token: ${{ secrets.GITHUB_TOKEN }}
