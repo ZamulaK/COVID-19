@@ -14,7 +14,6 @@ pool:
 variables: 
     system_accesstoken: $(System.AccessToken)
 
-
 steps:
 - checkout: self
   persistCredentials: true    #Allow scripts to access the system token
