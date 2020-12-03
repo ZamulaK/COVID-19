@@ -5,17 +5,13 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
-        repository: ZamulaK/COVID-19
-        token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Sync
-      uses:  denis-tingajkin/sync-files@main
+        persist-credentials: false
+    - name: repo-sync
+      uses: repo-sync/github-sync@v2
       with:
-        git-author-email: 'dan@dan.com'
-        git-author-name: 'Dan'
-        sync-repository: CSSEGISandData/COVID-19
-        sync-branch-name: master
-        result-branch-name: master-dan
-        ecclude-files: 'archived_data* who_covid19*' 
+        source_repo: "CSSEGISandData/COVID-19"
+        source_branch: "web-data"
+        destination_branch: "web-data"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
