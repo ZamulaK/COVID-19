@@ -1,4 +1,4 @@
-name: RepoSync master-dan
+ame: RepoSync master-dan
 on:
   schedule:
   - cron:  "0 1-5 * * *"
