@@ -15,7 +15,7 @@ jobs:
       with:
         git-author-email: 'dan@dan.com'
         git-author-name: 'Dan'
-        src-repository: CSSEGISandData/COVID-19
-        allow-files-pattern: csse_covid_19_data/*
+        sync-repository: CSSEGISandData/COVID-19
         sync-branch-name: master
         result-branch-name: master-dan
+        allow-files-pattern: csse_covid_19_data/*
