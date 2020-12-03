@@ -1,7 +1,9 @@
 name: RepoSync web-data
 on:
-  schedule:
+ workflow_dispatch:
+ schedule:
    - cron:  "35 */1 * * *"
+
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
