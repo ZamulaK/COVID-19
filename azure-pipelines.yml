@@ -15,17 +15,17 @@ variables:
     token: $(OAUTH)
 
 steps:
-- checkout: self
-  persistCredentials: true    #Allow scripts to access the system token
-  git remote set-url origin https://github.com/CSSEGISandData/COVID-19
+- checkout: none
+  persistCredentials: true  
 
 - task: CmdLine@2
   inputs:
     script: |
       git config --global user.email "xx@xx.com"
       git config --global user.name "xxx"
-       git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
-      git remote add vsts https://user_token:$(token)@dev.azure.com/DanA59Fin/DanA59Fin-CV19/_git/COVID-19.git
+      git remote set-url origin https://github.com/CSSEGISandData/COVID-19
+      git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+      git remote add vsts https://user_token:$(token)@dev.azure.com/DanA59Fin/COVID-19/_git/CV-19
       git branch -r | grep -v '\->' | while read remote; do git push -u vsts "${remote#origin/}"; done
   displayName: 'Github Sync'
   
