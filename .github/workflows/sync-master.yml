@@ -1,8 +1,9 @@
 name: RepoSync master-dan
 on:
-  schedule:
-   - cron:  "5 22-23 * * *"
-  workflow_dispatch:
+ workflow_dispatch:
+ schedule:
+   - cron:  "20 22-23 * * *"
+
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
