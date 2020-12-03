@@ -8,14 +8,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        repository: ZamulaK/COVID-19
+        repository: 'ZamulaK/COVID-19'
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Sync
       uses:  denis-tingajkin/sync-files@main
       with:
         git-author-email: 'dan@dan.com'
         git-author-name: 'Dan'
-        sync-repository: CSSEGISandData/COVID-19
-        sync-branch-name: master
-        result-branch-name: master-dan
-        allow-files-pattern: csse_covid_19_data/*
+        sync-repository: 'CSSEGISandData/COVID-19'
+        sync-branch-name: 'master'
+        working-directory: 'csse_covid_19_data' 
+        result-branch-name: 'master-dan'
