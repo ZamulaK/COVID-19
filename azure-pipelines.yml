@@ -11,9 +11,6 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-variables: 
-   system_accesstoken: $(System.AccessToken)
-   
 steps:
 - checkout: self
   persistCredentials: true    #Allow scripts to access the system token
@@ -28,5 +25,7 @@ steps:
       git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
       git remote add vsts https://dev.azure.com/DanA59Fin/DanA59Fin-CV19/_git/COVID-19
       git branch -r | grep -v '\->' | while read remote; do git -c http.extraheader="AUTHORIZATION: bearer $(system_accesstoken)" push -u vsts "${remote#origin/}"; done
-
   displayName: 'Github Sync'
+  env: 
+    system_accesstoken: $(System.AccessToken)
+
