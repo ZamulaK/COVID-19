@@ -15,6 +15,8 @@ pool:
 
 steps:
 - checkout: self
+  env: 
+   system_accesstoken: $(System.AccessToken)
   persistCredentials: true    #Allow scripts to access the system token
   clean: true 
 
