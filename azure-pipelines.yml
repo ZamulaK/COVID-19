@@ -6,7 +6,7 @@
 trigger:
   branches:
     include:
-    - '*'
+    - 'master-dan|web-data'
 variables:
   system_accesstoken: $(System.AccessToken)
 
