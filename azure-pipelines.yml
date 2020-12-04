@@ -6,7 +6,7 @@
 trigger:
   branches:
     include:
-      - '(master-dan|web-data)'
+      - '?(master*dan|web*data)'
 
 pool:
   vmImage: 'ubuntu-latest'
