@@ -6,7 +6,10 @@
 trigger:
   branches:
     include:
-      - 'web-data'
+      - '*'
+    exclude: 
+      - 'master'
+
 
 pool:
   vmImage: 'ubuntu-latest'
