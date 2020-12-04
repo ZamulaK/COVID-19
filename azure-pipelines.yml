@@ -3,10 +3,17 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-  branches:
-    include:
-      - '*'
+schedules:
+  - cron: '5 4-8 * * *'
+    displayName: Master Sync
+    branches:
+      include:
+      - master-dan
+  - cron: '35 * * * *'
+    displayName: Hourly Sync
+    branches:
+      include:
+      - web-data
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -25,8 +32,8 @@ steps:
     script: |
       git config --global user.email "xx@xx.com"
       git config --global user.name "xxx"
-      git branch -r | grep 'web-data' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+      git branch -r |grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
       git remote add vsts https://user_token:$(token)@dev.azure.com/DanA59Fin/COVID-19/_git/CV-19.git
-      git branch -r | grep 'web-data' | while read remote; do git push -u vsts "${remote#origin/}"; done  
+      git branch -r | grep -v '\->' | while read remote; do git push -u vsts "${remote#origin/}"; done  
   displayName: 'Github Sync'
   
