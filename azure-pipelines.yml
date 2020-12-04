@@ -4,16 +4,12 @@
 # https://aka.ms/yaml
 
 schedules:
-  - cron: '5 4-8 * * *'
+  - cron: '15 4-8 * * *'
     displayName: Master Sync
     branches:
       include:
       - master-dan
-  - cron: '35 * * * *'
-    displayName: Hourly Sync
-    branches:
-      include:
-      - web-data
+    always: true
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -25,7 +21,6 @@ steps:
 - checkout: self
   persistCredentials: true 
   clean: false
-  fetchDepth: 1000
 
 - task: CmdLine@2
   inputs:
