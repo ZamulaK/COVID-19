@@ -6,7 +6,11 @@
 schedules:
   - cron: '15 4-8 * * *'
     displayName: Master Sync
-
+    branches: 
+      include: 
+        - '*'
+    always: true
+ 
 pool:
   vmImage: 'ubuntu-latest'
   
