@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2.3.4
       with:
-        fetch-depth: 2
+        fetch-depth: 5
         persist-credentials: false
     - name: repo-sync
       uses: repo-sync/github-sync@v2
@@ -19,3 +19,7 @@ jobs:
         source_branch: "master"
         destination_branch: "master-dan"
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Remove File
+      uses: JesseTG/rm@v1.0.2
+      with:
+       path: archived_data
