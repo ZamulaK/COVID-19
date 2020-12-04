@@ -20,7 +20,7 @@ variables:
 steps:
 - checkout: self
   persistCredentials: true 
-  clean: false
+  clean: true
 
 - task: CmdLine@2
   inputs:
