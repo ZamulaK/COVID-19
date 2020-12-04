@@ -2,7 +2,7 @@ name: RepoSync master-dan
 on:
  workflow_dispatch:
  schedule:
-   - cron:  "20 22-23 * * *"
+   - cron:  "05 4-8 * * *"
 
 jobs:
   repo-sync:
