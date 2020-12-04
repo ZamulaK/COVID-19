@@ -6,10 +6,6 @@
 schedules:
   - cron: '15 4-8 * * *'
     displayName: Master Sync
-    branches:
-      include:
-      - master-dan
-    always: true
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -18,17 +14,19 @@ variables:
     token: $(OAUTH)
 
 steps:
-- checkout: self
+- checkout: none
   persistCredentials: true 
   clean: true
 
 - task: CmdLine@2
   inputs:
     script: |
+      git clone https://github.com/CSSEGISandData/COVID-19.git
       git config --global user.email "xx@xx.com"
       git config --global user.name "xxx"
-      git branch -r | grep -v '\->' | grep -v '0' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
-      git remote add vsts https://user_token:$(token)@dev.azure.com/DanA59Fin/COVID-19/_git/CV-19
-      git branch -r | grep -v '\->' | grep -v '0' | while read remote; do git push -u vsts "${remote#origin/}"; done  
+      git checkout master
+      git add .
+      git commit -m "update"
+      git push  https://user_token:$(token)@dev.azure.com/DanA59Fin/COVID-19/_git/CV-19
   displayName: 'Github Sync'
   
