@@ -25,7 +25,7 @@ steps:
 - checkout: self
   persistCredentials: true 
   clean: false
-  fetchDepth: 20
+  fetchDepth: 1000
 
 - task: CmdLine@2
   inputs:
