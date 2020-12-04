@@ -15,8 +15,9 @@ variables:
     token: $(OAUTH)
 
 steps:
-- checkout: none
-  persistCredentials: true  
+- checkout: self
+  persistCredentials: true 
+  fetchDepth: 5
 
 - task: CmdLine@2
   inputs:
