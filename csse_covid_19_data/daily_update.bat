@@ -10,6 +10,12 @@ svn update "..\CSSEGISandData\csse_covid_19_daily_reports"
 :CheckLast
 FOR /F "eol=| delims=" %%I IN ('DIR ".\*.txt" /A-D /B /O-D /TW 2^>nul') DO (
     SET LastFile=%%~nI
+    GOTO CheckMin
+)
+
+:CheckMin
+FOR /F "eol=| delims=" %%I IN ('DIR ".\*.min" /A-D /B /O-D /TW 2^>nul') DO (
+    SET DateMin=%%~nI
     GOTO CheckNew
 )
 
@@ -36,7 +42,7 @@ DEL "%LastFile%.txt"
 
 ECHO. 
 ECHO Merging files...
-".\util\FileUtil.exe" merge --folder "..\CSSEGISandData\csse_covid_19_daily_reports" --search "*.csv" --file ".\daily_cases\daily_cases_all.csv" --addname NoExt --endcol 12 
+".\util\FileUtil.exe" merge --folder "..\CSSEGISandData\csse_covid_19_daily_reports" --search "*.csv" --dateMin "%DateMin%" --file ".\daily_cases\daily_cases_all.csv" --addname NoExt --endcol 12 
 
 :CommitSVN
 ECHO. 
