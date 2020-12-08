@@ -2452,17 +2452,17 @@ FIPS,Admin2,Province_State,Country_Region,Last_Update,Lat,Long_,Confirmed,Deaths
 90032,Unassigned,Nevada,US,2020-12-02 05:27:41,,,0,0,0,0,"Unassigned, Nevada, US",12-01-2020
 32031,Washoe,Nevada,US,2020-12-02 05:27:41,40.66562265,-119.6631594,25181,278,0,24903,"Washoe, Nevada, US",12-01-2020
 32033,White Pine,Nevada,US,2020-12-02 05:27:41,39.44157041,-114.899966,340,1,0,339,"White Pine, Nevada, US",12-01-2020
-33001,Belknap,New Hampshire,US,2020-12-02 05:27:41,43.51637314,-71.41684235,776,12,0,764,"Belknap, New Hampshire, US",12-01-2020
+33001,Belknap,New Hampshire,US,2020-12-02 05:27:41,43.51637314,-71.41684235,775,13,0,764,"Belknap, New Hampshire, US",12-01-2020
 33003,Carroll,New Hampshire,US,2020-12-02 05:27:41,43.87498583,-71.20430216,401,2,0,399,"Carroll, New Hampshire, US",12-01-2020
-33005,Cheshire,New Hampshire,US,2020-12-02 05:27:41,42.92015988,-72.25311043,594,4,0,590,"Cheshire, New Hampshire, US",12-01-2020
+33005,Cheshire,New Hampshire,US,2020-12-02 05:27:41,42.92015988,-72.25311043,586,4,0,590,"Cheshire, New Hampshire, US",12-01-2020
 33007,Coos,New Hampshire,US,2020-12-02 05:27:41,44.69063265,-71.30633239,323,7,0,316,"Coos, New Hampshire, US",12-01-2020
-33009,Grafton,New Hampshire,US,2020-12-02 05:27:41,43.93779815,-71.82057197,555,2,0,553,"Grafton, New Hampshire, US",12-01-2020
-33011,Hillsborough,New Hampshire,US,2020-12-02 05:27:41,42.91537785,-71.7200253,9612,333,0,9279,"Hillsborough, New Hampshire, US",12-01-2020
-33013,Merrimack,New Hampshire,US,2020-12-02 05:27:41,43.29662971,-71.6811573,1977,34,0,1943,"Merrimack, New Hampshire, US",12-01-2020
-33015,Rockingham,New Hampshire,US,2020-12-02 05:27:41,42.98499744,-71.12883377,5226,110,0,5116,"Rockingham, New Hampshire, US",12-01-2020
-33017,Strafford,New Hampshire,US,2020-12-02 05:27:41,43.291833,-71.02336013,1650,15,0,1635,"Strafford, New Hampshire, US",12-01-2020
+33009,Grafton,New Hampshire,US,2020-12-02 05:27:41,43.93779815,-71.82057197,553,2,0,553,"Grafton, New Hampshire, US",12-01-2020
+33011,Hillsborough,New Hampshire,US,2020-12-02 05:27:41,42.91537785,-71.7200253,9610,333,0,9279,"Hillsborough, New Hampshire, US",12-01-2020
+33013,Merrimack,New Hampshire,US,2020-12-02 05:27:41,43.29662971,-71.6811573,1973,35,0,1943,"Merrimack, New Hampshire, US",12-01-2020
+33015,Rockingham,New Hampshire,US,2020-12-02 05:27:41,42.98499744,-71.12883377,5228,111,0,5116,"Rockingham, New Hampshire, US",12-01-2020
+33017,Strafford,New Hampshire,US,2020-12-02 05:27:41,43.291833,-71.02336013,1649,15,0,1635,"Strafford, New Hampshire, US",12-01-2020
 33019,Sullivan,New Hampshire,US,2020-12-02 05:27:41,43.36094111,-72.22203125,237,5,0,232,"Sullivan, New Hampshire, US",12-01-2020
-90033,Unassigned,New Hampshire,US,2020-12-02 05:27:41,,,451,4,0,447,"Unassigned, New Hampshire, US",12-01-2020
+90033,Unassigned,New Hampshire,US,2020-12-02 05:27:41,,,431,1,0,447,"Unassigned, New Hampshire, US",12-01-2020
 34001,Atlantic,New Jersey,US,2020-12-02 05:27:41,39.47538693,-74.65848483,8122,296,0,7826,"Atlantic, New Jersey, US",12-01-2020
 34003,Bergen,New Jersey,US,2020-12-02 05:27:41,40.96010917,-74.07164325,35327,2139,0,33188,"Bergen, New Jersey, US",12-01-2020
 34005,Burlington,New Jersey,US,2020-12-02 05:27:41,39.87681124,-74.66927768,14017,545,0,13472,"Burlington, New Jersey, US",12-01-2020
@@ -14383,17 +14383,17 @@ FIPS,Admin2,Province_State,Country_Region,Last_Update,Lat,Long_,Confirmed,Deaths
 90032,Unassigned,Nevada,US,2020-12-05 05:27:36,,,0,0,0,0,"Unassigned, Nevada, US",12-04-2020
 32031,Washoe,Nevada,US,2020-12-05 05:27:36,40.66562265,-119.6631594,26498,304,0,26194,"Washoe, Nevada, US",12-04-2020
 32033,White Pine,Nevada,US,2020-12-05 05:27:36,39.44157041,-114.899966,340,2,0,338,"White Pine, Nevada, US",12-04-2020
-33001,Belknap,New Hampshire,US,2020-12-05 05:27:36,43.51637314,-71.41684235,867,20,0,847,"Belknap, New Hampshire, US",12-04-2020
-33003,Carroll,New Hampshire,US,2020-12-05 05:27:36,43.87498583,-71.20430216,460,2,0,458,"Carroll, New Hampshire, US",12-04-2020
-33005,Cheshire,New Hampshire,US,2020-12-05 05:27:36,42.92015988,-72.25311043,647,4,0,643,"Cheshire, New Hampshire, US",12-04-2020
+33001,Belknap,New Hampshire,US,2020-12-05 05:27:36,43.51637314,-71.41684235,868,22,0,847,"Belknap, New Hampshire, US",12-04-2020
+33003,Carroll,New Hampshire,US,2020-12-05 05:27:36,43.87498583,-71.20430216,462,2,0,458,"Carroll, New Hampshire, US",12-04-2020
+33005,Cheshire,New Hampshire,US,2020-12-05 05:27:36,42.92015988,-72.25311043,638,4,0,643,"Cheshire, New Hampshire, US",12-04-2020
 33007,Coos,New Hampshire,US,2020-12-05 05:27:36,44.69063265,-71.30633239,337,8,0,329,"Coos, New Hampshire, US",12-04-2020
-33009,Grafton,New Hampshire,US,2020-12-05 05:27:36,43.93779815,-71.82057197,628,2,0,626,"Grafton, New Hampshire, US",12-04-2020
-33011,Hillsborough,New Hampshire,US,2020-12-05 05:27:36,42.91537785,-71.7200253,10307,343,0,9964,"Hillsborough, New Hampshire, US",12-04-2020
-33013,Merrimack,New Hampshire,US,2020-12-05 05:27:36,43.29662971,-71.6811573,2253,35,0,2218,"Merrimack, New Hampshire, US",12-04-2020
-33015,Rockingham,New Hampshire,US,2020-12-05 05:27:36,42.98499744,-71.12883377,5705,113,0,5592,"Rockingham, New Hampshire, US",12-04-2020
-33017,Strafford,New Hampshire,US,2020-12-05 05:27:36,43.291833,-71.02336013,1776,16,0,1760,"Strafford, New Hampshire, US",12-04-2020
+33009,Grafton,New Hampshire,US,2020-12-05 05:27:36,43.93779815,-71.82057197,624,2,0,626,"Grafton, New Hampshire, US",12-04-2020
+33011,Hillsborough,New Hampshire,US,2020-12-05 05:27:36,42.91537785,-71.7200253,10332,343,0,9964,"Hillsborough, New Hampshire, US",12-04-2020
+33013,Merrimack,New Hampshire,US,2020-12-05 05:27:36,43.29662971,-71.6811573,2253,36,0,2218,"Merrimack, New Hampshire, US",12-04-2020
+33015,Rockingham,New Hampshire,US,2020-12-05 05:27:36,42.98499744,-71.12883377,5723,114,0,5592,"Rockingham, New Hampshire, US",12-04-2020
+33017,Strafford,New Hampshire,US,2020-12-05 05:27:36,43.291833,-71.02336013,1781,16,0,1760,"Strafford, New Hampshire, US",12-04-2020
 33019,Sullivan,New Hampshire,US,2020-12-05 05:27:36,43.36094111,-72.22203125,259,5,0,254,"Sullivan, New Hampshire, US",12-04-2020
-90033,Unassigned,New Hampshire,US,2020-12-05 05:27:36,,,536,4,0,532,"Unassigned, New Hampshire, US",12-04-2020
+90033,Unassigned,New Hampshire,US,2020-12-05 05:27:36,,,413,0,0,532,"Unassigned, New Hampshire, US",12-04-2020
 34001,Atlantic,New Jersey,US,2020-12-05 05:27:36,39.47538693,-74.65848483,8474,305,0,8169,"Atlantic, New Jersey, US",12-04-2020
 34003,Bergen,New Jersey,US,2020-12-05 05:27:36,40.96010917,-74.07164325,36840,2159,0,34681,"Bergen, New Jersey, US",12-04-2020
 34005,Burlington,New Jersey,US,2020-12-05 05:27:36,39.87681124,-74.66927768,14647,549,0,14098,"Burlington, New Jersey, US",12-04-2020
@@ -18360,17 +18360,17 @@ FIPS,Admin2,Province_State,Country_Region,Last_Update,Lat,Long_,Confirmed,Deaths
 90032,Unassigned,Nevada,US,2020-12-06 05:26:18,,,0,0,0,0,"Unassigned, Nevada, US",12-05-2020
 32031,Washoe,Nevada,US,2020-12-06 05:26:18,40.66562265,-119.6631594,26974,306,0,26668,"Washoe, Nevada, US",12-05-2020
 32033,White Pine,Nevada,US,2020-12-06 05:26:18,39.44157041,-114.899966,350,2,0,348,"White Pine, Nevada, US",12-05-2020
-33001,Belknap,New Hampshire,US,2020-12-06 05:26:18,43.51637314,-71.41684235,892,24,0,868,"Belknap, New Hampshire, US",12-05-2020
-33003,Carroll,New Hampshire,US,2020-12-06 05:26:18,43.87498583,-71.20430216,481,2,0,479,"Carroll, New Hampshire, US",12-05-2020
-33005,Cheshire,New Hampshire,US,2020-12-06 05:26:18,42.92015988,-72.25311043,673,4,0,669,"Cheshire, New Hampshire, US",12-05-2020
+33001,Belknap,New Hampshire,US,2020-12-06 05:26:18,43.51637314,-71.41684235,892,26,0,868,"Belknap, New Hampshire, US",12-05-2020
+33003,Carroll,New Hampshire,US,2020-12-06 05:26:18,43.87498583,-71.20430216,483,2,0,479,"Carroll, New Hampshire, US",12-05-2020
+33005,Cheshire,New Hampshire,US,2020-12-06 05:26:18,42.92015988,-72.25311043,664,4,0,669,"Cheshire, New Hampshire, US",12-05-2020
 33007,Coos,New Hampshire,US,2020-12-06 05:26:18,44.69063265,-71.30633239,341,9,0,332,"Coos, New Hampshire, US",12-05-2020
-33009,Grafton,New Hampshire,US,2020-12-06 05:26:18,43.93779815,-71.82057197,640,2,0,638,"Grafton, New Hampshire, US",12-05-2020
-33011,Hillsborough,New Hampshire,US,2020-12-06 05:26:18,42.91537785,-71.7200253,10351,344,0,10007,"Hillsborough, New Hampshire, US",12-05-2020
-33013,Merrimack,New Hampshire,US,2020-12-06 05:26:18,43.29662971,-71.6811573,2324,36,0,2288,"Merrimack, New Hampshire, US",12-05-2020
-33015,Rockingham,New Hampshire,US,2020-12-06 05:26:18,42.98499744,-71.12883377,5796,113,0,5683,"Rockingham, New Hampshire, US",12-05-2020
-33017,Strafford,New Hampshire,US,2020-12-06 05:26:18,43.291833,-71.02336013,1800,16,0,1784,"Strafford, New Hampshire, US",12-05-2020
+33009,Grafton,New Hampshire,US,2020-12-06 05:26:18,43.93779815,-71.82057197,637,2,0,638,"Grafton, New Hampshire, US",12-05-2020
+33011,Hillsborough,New Hampshire,US,2020-12-06 05:26:18,42.91537785,-71.7200253,10493,344,0,10007,"Hillsborough, New Hampshire, US",12-05-2020
+33013,Merrimack,New Hampshire,US,2020-12-06 05:26:18,43.29662971,-71.6811573,2324,37,0,2288,"Merrimack, New Hampshire, US",12-05-2020
+33015,Rockingham,New Hampshire,US,2020-12-06 05:26:18,42.98499744,-71.12883377,5814,114,0,5683,"Rockingham, New Hampshire, US",12-05-2020
+33017,Strafford,New Hampshire,US,2020-12-06 05:26:18,43.291833,-71.02336013,1805,16,0,1784,"Strafford, New Hampshire, US",12-05-2020
 33019,Sullivan,New Hampshire,US,2020-12-06 05:26:18,43.36094111,-72.22203125,265,5,0,260,"Sullivan, New Hampshire, US",12-05-2020
-90033,Unassigned,New Hampshire,US,2020-12-06 05:26:18,,,669,4,0,665,"Unassigned, New Hampshire, US",12-05-2020
+90033,Unassigned,New Hampshire,US,2020-12-06 05:26:18,,,420,0,0,665,"Unassigned, New Hampshire, US",12-05-2020
 34001,Atlantic,New Jersey,US,2020-12-06 05:26:18,39.47538693,-74.65848483,8641,305,0,8336,"Atlantic, New Jersey, US",12-05-2020
 34003,Bergen,New Jersey,US,2020-12-06 05:26:18,40.96010917,-74.07164325,37350,2165,0,35185,"Bergen, New Jersey, US",12-05-2020
 34005,Burlington,New Jersey,US,2020-12-06 05:26:18,39.87681124,-74.66927768,14990,551,0,14439,"Burlington, New Jersey, US",12-05-2020
@@ -22337,17 +22337,17 @@ FIPS,Admin2,Province_State,Country_Region,Last_Update,Lat,Long_,Confirmed,Deaths
 90032,Unassigned,Nevada,US,2020-12-07 05:26:14,,,0,0,0,0,"Unassigned, Nevada, US",12-06-2020
 32031,Washoe,Nevada,US,2020-12-07 05:26:14,40.66562265,-119.6631594,27533,314,0,27219,"Washoe, Nevada, US",12-06-2020
 32033,White Pine,Nevada,US,2020-12-07 05:26:14,39.44157041,-114.899966,371,3,0,368,"White Pine, Nevada, US",12-06-2020
-33001,Belknap,New Hampshire,US,2020-12-07 05:26:14,43.51637314,-71.41684235,934,25,0,909,"Belknap, New Hampshire, US",12-06-2020
-33003,Carroll,New Hampshire,US,2020-12-07 05:26:14,43.87498583,-71.20430216,496,2,0,494,"Carroll, New Hampshire, US",12-06-2020
-33005,Cheshire,New Hampshire,US,2020-12-07 05:26:14,42.92015988,-72.25311043,690,4,0,686,"Cheshire, New Hampshire, US",12-06-2020
+33001,Belknap,New Hampshire,US,2020-12-07 05:26:14,43.51637314,-71.41684235,934,27,0,909,"Belknap, New Hampshire, US",12-06-2020
+33003,Carroll,New Hampshire,US,2020-12-07 05:26:14,43.87498583,-71.20430216,500,2,0,494,"Carroll, New Hampshire, US",12-06-2020
+33005,Cheshire,New Hampshire,US,2020-12-07 05:26:14,42.92015988,-72.25311043,682,4,0,686,"Cheshire, New Hampshire, US",12-06-2020
 33007,Coos,New Hampshire,US,2020-12-07 05:26:14,44.69063265,-71.30633239,347,9,0,338,"Coos, New Hampshire, US",12-06-2020
-33009,Grafton,New Hampshire,US,2020-12-07 05:26:14,43.93779815,-71.82057197,652,2,0,650,"Grafton, New Hampshire, US",12-06-2020
-33011,Hillsborough,New Hampshire,US,2020-12-07 05:26:14,42.91537785,-71.7200253,10458,346,0,10112,"Hillsborough, New Hampshire, US",12-06-2020
-33013,Merrimack,New Hampshire,US,2020-12-07 05:26:14,43.29662971,-71.6811573,2408,36,0,2372,"Merrimack, New Hampshire, US",12-06-2020
-33015,Rockingham,New Hampshire,US,2020-12-07 05:26:14,42.98499744,-71.12883377,5976,114,0,5862,"Rockingham, New Hampshire, US",12-06-2020
-33017,Strafford,New Hampshire,US,2020-12-07 05:26:14,43.291833,-71.02336013,1823,17,0,1806,"Strafford, New Hampshire, US",12-06-2020
+33009,Grafton,New Hampshire,US,2020-12-07 05:26:14,43.93779815,-71.82057197,650,2,0,650,"Grafton, New Hampshire, US",12-06-2020
+33011,Hillsborough,New Hampshire,US,2020-12-07 05:26:14,42.91537785,-71.7200253,10739,346,0,10112,"Hillsborough, New Hampshire, US",12-06-2020
+33013,Merrimack,New Hampshire,US,2020-12-07 05:26:14,43.29662971,-71.6811573,2413,37,0,2372,"Merrimack, New Hampshire, US",12-06-2020
+33015,Rockingham,New Hampshire,US,2020-12-07 05:26:14,42.98499744,-71.12883377,6005,115,0,5862,"Rockingham, New Hampshire, US",12-06-2020
+33017,Strafford,New Hampshire,US,2020-12-07 05:26:14,43.291833,-71.02336013,1830,17,0,1806,"Strafford, New Hampshire, US",12-06-2020
 33019,Sullivan,New Hampshire,US,2020-12-07 05:26:14,43.36094111,-72.22203125,265,5,0,260,"Sullivan, New Hampshire, US",12-06-2020
-90033,Unassigned,New Hampshire,US,2020-12-07 05:26:14,,,839,4,0,835,"Unassigned, New Hampshire, US",12-06-2020
+90033,Unassigned,New Hampshire,US,2020-12-07 05:26:14,,,406,0,0,835,"Unassigned, New Hampshire, US",12-06-2020
 34001,Atlantic,New Jersey,US,2020-12-07 05:26:14,39.47538693,-74.65848483,8802,306,0,8496,"Atlantic, New Jersey, US",12-06-2020
 34003,Bergen,New Jersey,US,2020-12-07 05:26:14,40.96010917,-74.07164325,37893,2165,0,35728,"Bergen, New Jersey, US",12-06-2020
 34005,Burlington,New Jersey,US,2020-12-07 05:26:14,39.87681124,-74.66927768,15305,551,0,14754,"Burlington, New Jersey, US",12-06-2020
