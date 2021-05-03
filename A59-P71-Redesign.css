@@ -1,0 +1,455 @@
+/* --------------------------------------------------------------- */
+/* header and home icon                                            */
+/* --------------------------------------------------------------- */
+
+/* header */
+#site-header {
+  background-image: url('https://area59aa.org/wp-content/uploads/2021/04/2021_Page_Header-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+  #site-header.full_screen-header {
+    background-color: white;
+    border-bottom: 1px solid #145A32;
+  }
+
+
+/* home icon */
+.elementor-icon-wrapper {
+  float: right !important;
+  clear: left !important;
+  margin: 5px 20px -60px 0 !important;
+}
+
+.elementor-widget-icon.elementor-view-default .elementor-icon {
+  display: inline-block !important;
+  height: 70px !important;
+  font-size: 27pt !important;
+  color: #3498DB !important;
+  text-decoration: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+
+
+/* --------------------------------------------------------------- */
+/* desktop menu                                                    */
+/* --------------------------------------------------------------- */
+
+/* desktop menu icon */
+.menu-bar-inner {
+  position: fixed !important;
+  vertical-align: middle !important;
+  top: 25px !important;
+  right: 1.25% !important;
+  height: 80px !important;
+  padding: 5px 15px 10px 5px !important;
+  background-color: rgba(0,0,0, .1);
+  cursor: pointer !important;
+}
+
+.menu-bar {
+  color: white !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+
+  .menu-bar::before {
+    content: "Menu" !important;
+    font-weight: bold !important;
+    display: block !important;
+    margin-top: 5px !important;
+    color: white !important;
+    cursor: pointer !important;
+  }
+
+  .menu-bar:active::before .menu-bar:hover::before, .menu-bar:link::before .menu-bar:visited::before {
+    color: white !important;
+  }
+
+.ham, .ham::before, .ham::after {
+  background-color: white !important;
+}
+
+
+/* desktop menu background/display */
+#site-header.full_screen-header #full-screen-menu {
+  position: fixed !important;
+  vertical-align: top !important;
+  left: unset !important;
+  right: 0 !important;
+  width: 375px !important;
+  height: 95% !important;
+  z-index: -1 !important;
+  overflow-y: hidden !important;
+}
+
+#full-screen-menu-inner {
+  display: block !important;
+  text-align: center !important;
+  width: auto !important;
+  height: 110% !important;
+  margin-top: -65px !important;
+  padding: 0 0 0 40px !important;
+  overflow-y: scroll !important;
+}
+
+#full-screen-menu #site-navigation {
+  text-align: left !important;
+  padding: 20px 0 0 0 0 !important;
+  overflow-y: hidden !important;
+}
+
+
+/* desktop menu items */
+#site-header.full_screen-header .fs-dropdown-menu > li > a {
+  margin-top: 20px !important;
+  padding: 0 !important;
+  font-size: 12.5pt !important;
+}
+
+#site-header.full_screen-header .fs-dropdown-menu ul.sub-menu {
+  margin: 8px 0 0 30px !important;
+}
+
+  #site-header.full_screen-header .fs-dropdown-menu ul.sub-menu li a {
+    font-size: 10.5pt !important;
+  }
+
+.nav-arrow::before {
+  font-size: 18pt !important;
+}
+
+
+/* --------------------------------------------------------------- */
+/* mobile menu                                                     */
+/* --------------------------------------------------------------- */
+
+/* mobile menu icon */
+.oceanwp-mobile-menu-icon a, .oceanwp-mobile-menu-icon a:hover {
+  font-size: 10pt !important;
+  color: white !important;
+}
+
+.oceanwp-mobile-menu-icon span {
+  display: none !important;
+}
+
+.oceanwp-mobile-menu-icon.mobile-right {
+  position: absolute !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  right: 0 !important;
+  padding-left: 8% !important;
+  padding-right: 2% !important;
+  background-color: black !important;
+  cursor: pointer;
+}
+
+
+/* mobile menu background */
+#sidr {
+  padding-left: 20px !important;
+  width: 260px !important;
+  background-color: black !important;
+}
+
+  #sidr ul, #sidr li, #sidr a {
+    background-color: transparent !important;
+  }
+
+
+/* mobile menu items */
+.sidr-class-close-text, .icon-close:before {
+  font-size: 8.5pt !important;
+  margin-left: 10px !important;
+  color: white !important;
+}
+
+.sidr-class-dropdown-menu li a {
+  padding: 6px 5px 0 0 !important;
+  font-size: 10pt !important;
+  color: white !important;
+}
+
+.sidr-class-dropdown-menu ul a::before {
+  content: "" !important;
+}
+
+.sidr-class-sub-menu {
+  margin-left: 8px !important;
+}
+
+  .sidr-class-sub-menu li a {
+    padding: 1px 5px 1px 0 !important;
+    font-size: 9pt !important;
+    color: white !important;
+  }
+
+.sidr-class-dropdown-toggle:before {
+  content: "+";
+  font-size: 16pt !important;
+  margin-top: -12px !important;
+  color: white !important;
+}
+
+.sidr-class-dropdown-toggle:after {
+  content: "-";
+  font-size: 18pt !important;
+  margin-top: -15px !important;
+  color: white !important;
+  display: none !important;
+}
+
+.sidr-class-mobile-searchform {
+  background-color: white !important;
+}
+
+
+/* --------------------------------------------------------------- */
+/* dynamic resizing - mobile                                       */
+/* --------------------------------------------------------------- */
+
+/* mobile menu: icon-only */
+@media only screen and (min-width: 350px) {
+  #site-header {
+    min-height: 55px;
+  }
+
+  .oceanwp-mobile-menu-icon.mobile-right {
+    padding-top: 4px;
+  }
+
+  .oceanwp-mobile-menu-icon {
+    min-height: 55px;
+  }
+
+  .oceanwp-mobile-menu-icon a, .oceanwp-mobile-menu-icon a:hover {
+      font-size: 14pt !important;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+  #site-header {
+    min-height: 65px;
+  }
+
+  .oceanwp-mobile-menu-icon.mobile-right {
+    padding-top: 8px;
+   }
+
+  .oceanwp-mobile-menu-icon {
+    min-height: 65px;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .oceanwp-mobile-menu-icon.mobile-right {
+    padding-left: 7.5% !important;
+    padding-right: 1.5% !important;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #site-header {
+    min-height: 70px;
+  }
+  .oceanwp-mobile-menu-icon.mobile-right {
+    padding-top: 10px;
+    padding-left: 7% !important;
+    padding-right: 1% !important;
+  }
+  .oceanwp-mobile-menu-icon {
+    min-height: 70px;
+  }  
+}
+
+
+/* mobile menu: icon with text */
+@media only screen and (min-width: 550px) {
+  #site-header {
+    min-height: 80px;
+  }
+
+  .oceanwp-mobile-menu-icon.mobile-right {
+    padding-left: 5% !important;
+  }
+
+  .oceanwp-mobile-menu-icon {
+    min-height: 80px;
+    margin-right: -10px;
+  }
+
+    .oceanwp-mobile-menu-icon::before {
+      content: "Menu" !important;
+      font: bold 8.5pt Calibri !important;
+      display: block !important;
+      margin-top: 10px !important;
+      margin-bottom: -5px !important;
+      color: white !important;
+      cursor: pointer !important;
+    }
+
+    .oceanwp-mobile-menu-icon:hover::before {
+      color: white !important;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+  #site-header {
+    min-height: 90px;
+  }
+
+  .oceanwp-mobile-menu-icon {
+    min-height: 90px;
+    padding-top: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  #site-header {
+    min-height: 100px;
+  }
+
+  .oceanwp-mobile-menu-icon.mobile-right {
+    padding-left: 4% !important;
+    padding-top: 15px !important;
+  }
+
+  .oceanwp-mobile-menu-icon {
+    min-height: 100px;
+    margin-right: -12px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  #site-header {
+    min-height: 120px;
+  }
+
+  .oceanwp-mobile-menu-icon.mobile-right {
+    padding-left: 3.75% !important;
+    padding-top: 23px !important;
+  }
+
+  .oceanwp-mobile-menu-icon {
+    min-height: 120px;
+    margin-right: -15px;
+  }
+}
+
+
+/* --------------------------------------------------------------- */
+/* dynamic resizing - desktop and home icon                        */
+/* --------------------------------------------------------------- */
+
+@media only screen and (min-width: 960px) {
+  #div59Home {
+    margin-right: -75px !important;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .menu-bar-inner {
+    right: 1.5% !important;
+  }
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .menu-bar-inner {
+    right: 2% !important;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  #site-header {
+    min-height: 150px;
+  }
+
+  .menu-bar-inner {
+    right: 2.25% !important;
+  }
+
+  #div59Home {
+    margin-right: -100px !important;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  #site-header {
+    min-height: 175px;
+  }
+
+  .menu-bar-inner {
+    right: 2.75% !important;
+    margin-top: 40px !important;
+  }
+
+  #div59Home {
+    margin-right: -125px !important;
+  }
+}
+
+
+/* --------------------------------------------------------------- */
+/* dynamic resizing - small screens (based on max-width)           */
+/* --------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 950px) {
+  .elementor-icon-wrapper {
+    margin-right: -20px !important;
+  }
+
+  .elementor-widget-icon.elementor-view-default .elementor-icon {
+    font-size: 24pt !important;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .elementor-icon-wrapper {
+    margin-right: -15px !important;
+  }
+
+  .elementor-widget-icon.elementor-view-default .elementor-icon {
+    font-size: 19pt !important;
+  }
+
+  #div59Home {
+    margin-right: -15px !important;
+    margin-top: -5px !important;
+  }
+
+  #a59Home, #i59Home {
+    font-size: 19pt;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .elementor-widget-icon.elementor-view-default .elementor-icon {
+    font-size: 15pt !important;
+  }
+
+  #a59Home, #i59Home {
+    font-size: 15pt;
+  }
+}
+
+
+
+/* very small screen sizes */
+@media only screen and (max-width: 299px) {
+  #site-header {
+    background-size: contain;
+  }
+
+  .oceanwp-mobile-menu-icon.mobile-right {
+    position: relative !important;
+    margin-right: -7px !important;
+    background-color: transparent !important;
+	padding-left: 7% !important;
+	padding-right: 0 !important;
+  }
+}
